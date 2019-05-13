@@ -72,8 +72,14 @@ function ssPlace(){
     }
     ]
     
-    var sortPlace = allHol.sort();
+    var sortPlace = allHol.sort(function (a,b){
+        if (a.place>b.place) return 1;
+        if (b.place>a.place) return -1;
+        return 0;
+
+    });
     
+    console.log(sortPlace)
     var colHol = 1;
     var htmlTable = "<table><tr>";
     
