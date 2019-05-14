@@ -1,27 +1,33 @@
 function ssPrice(){
 var allHol = [ {
     place: "Denmark",
-    price: 340
+    price: 340,
+    order: "purchaseden"
 },
 {
     place: "England",
-    price: 250
+    price: 250,
+    order: "purchaseeng"
 },
 {
     place: "Egypt",
-    price: 560
+    price: 560,
+    order: "purchaseegy"
 },
 {
     place: "China",
-    price: 890
+    price: 890,
+    order: "purchasechi"
 },
 {
     place: "India",
-    price: 1340
+    price: 1340,
+    order: "purchaseind"
 },
 {
     place: "Japan",
-    price: 1250
+    price: 1250,
+    order: "<button id='testjapbutton'>clickme</button>"
 }
 ]
 
@@ -30,10 +36,10 @@ var sortPrice = allHol.sort(function(a, b){
 });
 
 var colHol = 1;
-var htmlTable = "<table class='table is-fullwidth'><tr><td>Destination</td><td>Euro</td></tr><tr>";
+var htmlTable = "<table class='table is-fullwidth'><tr><td>Destination</td><td>Euro</td><td>Order</td></tr><tr>";
 
 for (var i=0; i<allHol.length;i++){
-    htmlTable += "<td>" + sortPrice[i].place + "</td><td>" + sortPrice[i].price +"</td>";
+    htmlTable += "<td>" + sortPrice[i].place + "</td><td>" + sortPrice[i].price +"</td><td>" + sortPrice[i].order + "</td>";
     var next=i+1;
     if(next%colHol==0 && next!=allHol.length){
         htmlTable += "</tr><tr>";
@@ -81,7 +87,7 @@ function ssPlace(){
     
     console.log(sortPlace)
     var colHol = 1;
-    var htmlTable = "<table class='table is-fullwidth'><tr><td>Destination</td><td>Euro</td></tr><tr>";
+    var htmlTable = "<table><tr><td>Destination</td><td>Euro</td></tr><tr>";
     
     for (var i=0; i<allHol.length;i++){
         htmlTable += "<td>" + sortPlace[i].place + "</td><td>" + sortPlace[i].price +"</td>";
