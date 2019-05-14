@@ -30,7 +30,7 @@ var sortPrice = allHol.sort(function(a, b){
 });
 
 var colHol = 1;
-var htmlTable = "<table><tr>";
+var htmlTable = "<table><tr><td>Destination</td><td>Euro</td></tr><tr>";
 
 for (var i=0; i<allHol.length;i++){
     htmlTable += "<td>" + sortPrice[i].place + "</td><td>" + sortPrice[i].price +"</td>";
@@ -81,7 +81,7 @@ function ssPlace(){
     
     console.log(sortPlace)
     var colHol = 1;
-    var htmlTable = "<table><tr>";
+    var htmlTable = "<table><tr><td>Destination</td><td>Euro</td></tr><tr>";
     
     for (var i=0; i<allHol.length;i++){
         htmlTable += "<td>" + sortPlace[i].place + "</td><td>" + sortPlace[i].price +"</td>";
