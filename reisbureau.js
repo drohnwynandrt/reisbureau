@@ -1,36 +1,36 @@
-function ssPrice(){
-var allHol = [ {
+
+ var allHol = [ {
     place: "Denmark",
     price: 340,
-    order: "purchaseden"
+    order: "<button id='godenmark'>clickmeden</button>"
 },
 {
     place: "England",
     price: 250,
-    order: "purchaseeng"
+    order: "<button id='goengland'>clickmeeng</button>"
 },
 {
     place: "Egypt",
     price: 560,
-    order: "purchaseegy"
+    order: "<button id='goegypt'>clickmeegypt</button>"
 },
 {
     place: "China",
     price: 890,
-    order: "purchasechi"
+    order: "<button id='gochina'>clickmechina</button>"
 },
 {
     place: "India",
     price: 1340,
-    order: "purchaseind"
+    order: "<button id='goindia'>clickmeind</button>"
 },
 {
     place: "Japan",
     price: 1250,
-    order: "<button id='testjapbutton'>clickme</button>"
+    order: "<button id='gojapan'>clickmejap</button>"
 }
 ]
-
+function ssPrice(){
 var sortPrice = allHol.sort(function(a, b){
  return a.price - b.price;
 });
@@ -52,31 +52,6 @@ document.getElementById("listHol").innerHTML = htmlTable;
 };
 
 function ssPlace(){
-    var allHol = [ {
-        place: "Denmark",
-        price: 340
-    },
-    {
-        place: "England",
-        price: 250
-    },
-    {
-        place: "Egypt",
-        price: 560
-    },
-    {
-        place: "China",
-        price: 890
-    },
-    {
-        place: "India",
-        price: 1340
-    },
-    {
-        place: "Japan",
-        price: 1250
-    }
-    ]
     
     var sortPlace = allHol.sort(function (a,b){
         if (a.place>b.place) return 1;
@@ -85,12 +60,11 @@ function ssPlace(){
 
     });
     
-    console.log(sortPlace)
     var colHol = 1;
-    var htmlTable = "<table><tr><td>Destination</td><td>Euro</td></tr><tr>";
+    var htmlTable = "<table class='table is-fullwidth'><tr><td>Destination</td><td>Euro</td><td>Order</td></tr><tr>";
     
     for (var i=0; i<allHol.length;i++){
-        htmlTable += "<td>" + sortPlace[i].place + "</td><td>" + sortPlace[i].price +"</td>";
+        htmlTable += "<td>" + sortPlace[i].place + "</td><td>" + sortPlace[i].price +"</td><td>" + sortPlace[i].order + "</td>";
         var next=i+1;
         if(next%colHol==0 && next!=allHol.length){
             htmlTable += "</tr><tr>";
@@ -101,6 +75,13 @@ function ssPlace(){
     
     document.getElementById("listHol").innerHTML = htmlTable;
     };
+
+// below code not working yet
+    function destination(){
+        var i= 0;
+        document.getElementById("form").innerHTML = "to" + allHol[i].place;
+
+    }
 
 /*
 var allHol = [["Australia", "1350"], ["Germany", "200"], ["UK", "250"], ["Italy", "400"], ["America", "1250"]];
