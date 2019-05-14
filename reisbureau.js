@@ -80,15 +80,11 @@ function ssPlace(){
 
    
     function toDes(a){
-        x = allHol.find(function() {
-            
-            console.log(a)
-            return allHol.place === a
+        x = allHol.find(function(b) {
+            return b.place === a
         });
 
-        console.log(x)
-
-        document.getElementById("form").innerHTML = "Would you like to go to " + x.place +"?"
+        document.getElementById("form").innerHTML = "Would you like to go to " + x.place + " for €"+x.price+"?"
     }
 
 
