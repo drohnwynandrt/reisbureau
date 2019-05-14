@@ -2,32 +2,32 @@
  var allHol = [ {
     place: "Denmark",
     price: 340,
-    order: "<button id='godenmark'>clickmeden</button>"
+    order: "<button onclick='toDes()'>clickmeden</button>"
 },
 {
     place: "England",
     price: 250,
-    order: "<button id='goengland'>clickmeeng</button>"
+    order: "<button onclick='toDes()'>clickmeeng</button>"
 },
 {
     place: "Egypt",
     price: 560,
-    order: "<button id='goegypt'>clickmeegypt</button>"
+    order: "<button onclick='toDes()'>clickmeegypt</button>"
 },
 {
     place: "China",
     price: 890,
-    order: "<button id='gochina'>clickmechina</button>"
+    order: "<button onclick='toDes()'>clickmechina</button>"
 },
 {
     place: "India",
     price: 1340,
-    order: "<button id='goindia'>clickmeind</button>"
+    order: "<button onclick='toDes()'>clickmeind</button>"
 },
 {
     place: "Japan",
     price: 1250,
-    order: "<button id='gojapan'>clickmejap</button>"
+    order: "<button onclick='toDes()'>clickmejap</button>"
 }
 ]
 function ssPrice(){
@@ -77,11 +77,12 @@ function ssPlace(){
     };
 
 // below code not working yet
-    function destination(){
-        var i= 0;
-        document.getElementById("form").innerHTML = "to" + allHol[i].place;
-
+    function toDes(){
+        console.log();
+        document.getElementById("form").innerHTML = "Would you like to go to " + allHol[0].place+" for "+ allHol[0].price+"?"
     }
+
+
 
 /*
 var allHol = [["Australia", "1350"], ["Germany", "200"], ["UK", "250"], ["Italy", "400"], ["America", "1250"]];
