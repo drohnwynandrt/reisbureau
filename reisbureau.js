@@ -2,32 +2,32 @@
  var allHol = [ {
     place: "Denmark",
     price: 340,
-    order: "<button onclick='toDes()'>clickmeden</button>"
+    order: "<button onclick='toDes(\"Denmark\")'>clickmeden</button>"
 },
 {
     place: "England",
     price: 250,
-    order: "<button onclick='toDes()'>clickmeeng</button>"
+    order: "<button onclick='toDes(\"England\")'>clickmeeng</button>"
 },
 {
     place: "Egypt",
     price: 560,
-    order: "<button onclick='toDes()'>clickmeegypt</button>"
+    order: "<button onclick='toDes(\"Egypt\")'>clickmeegypt</button>"
 },
 {
     place: "China",
     price: 890,
-    order: "<button onclick='toDes()'>clickmechina</button>"
+    order: "<button onclick='toDes(\"China\")'>clickmechina</button>"
 },
 {
     place: "India",
     price: 1340,
-    order: "<button onclick='toDes()'>clickmeind</button>"
+    order: "<button onclick='toDes(\"India\")'>clickmeind</button>"
 },
 {
     place: "Japan",
     price: 1250,
-    order: "<button onclick='toDes()'>clickmejap</button>"
+    order: "<button onclick='toDes(\"Japan\")'>clickmejap</button>"
 }
 ]
 function ssPrice(){
@@ -77,9 +77,18 @@ function ssPlace(){
     };
 
 // below code not working yet
-    function toDes(){
-        console.log();
-        document.getElementById("form").innerHTML = "Would you like to go to " + allHol[0].place+" for "+ allHol[0].price+"?"
+
+   
+    function toDes(a){
+        x = allHol.find(function() {
+            
+            console.log(a)
+            return allHol.place === a
+        });
+
+        console.log(x)
+
+        document.getElementById("form").innerHTML = "Would you like to go to " + x.place +"?"
     }
 
 
