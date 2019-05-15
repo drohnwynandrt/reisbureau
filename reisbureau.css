@@ -1,3 +1,9 @@
+body{
+    width: 960px;
+    text-align:center;
+    margin:auto;
+    padding: auto;
+}
 #form{
     display: none;
 }
@@ -14,8 +20,11 @@ button{
 }
 #pageHeader{
     background-image: url("banner.jpg");
-    margin: auto;
+    background-repeat: no-repeat;
     text-align:center;
-    width: 960px;
+    margin-left: auto;
+    margin-right:auto;
+    padding: 0;
+    width: 800px;
     height: 300px;
 }
