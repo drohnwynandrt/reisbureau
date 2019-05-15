@@ -2,32 +2,32 @@
  var allHol = [ {
     place: "Denmark",
     price: 340,
-    order: "<button onclick='toDes(\"Denmark\")'>clickmeden</button>"
+    order: "<button onclick='toDes(\"Denmark\")'>Go</button>"
 },
 {
     place: "England",
     price: 250,
-    order: "<button onclick='toDes(\"England\")'>clickmeeng</button>"
+    order: "<button onclick='toDes(\"England\")'>Go</button>"
 },
 {
     place: "Egypt",
     price: 560,
-    order: "<button onclick='toDes(\"Egypt\")'>clickmeegypt</button>"
+    order: "<button onclick='toDes(\"Egypt\")'>Go</button>"
 },
 {
     place: "China",
     price: 890,
-    order: "<button onclick='toDes(\"China\")'>clickmechina</button>"
+    order: "<button onclick='toDes(\"China\")'>Go</button>"
 },
 {
     place: "India",
     price: 1340,
-    order: "<button onclick='toDes(\"India\")'>clickmeind</button>"
+    order: "<button onclick='toDes(\"India\")'>Go</button>"
 },
 {
     place: "Japan",
     price: 1250,
-    order: "<button onclick='toDes(\"Japan\")'>clickmejap</button>"
+    order: "<button onclick='toDes(\"Japan\")'>Go</button>"
 }
 ]
 function ssPrice(){

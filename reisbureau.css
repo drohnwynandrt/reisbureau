@@ -1,3 +1,21 @@
 #form{
     display: none;
 }
+#buttonContainer{
+    margin:auto;
+    text-align: center;
+}
+
+button{
+    border-radius: 50%;
+    background-color: bisque;
+    padding: 10px;
+    margin: 5px;
+}
+#pageHeader{
+    background-image: url("banner.jpg");
+    margin: auto;
+    text-align:center;
+    width: 960px;
+    height: 300px;
+}
