@@ -13,7 +13,54 @@
     <button onclick="ssPrice()">Sort Holidays on Price</button>
     <button onclick="ssPlace()">Sort Holidays on Place</button>
     <div id="listHol"></div>
-    <p id="form"></p>
+    <p id="confirmDes"></p>
+    <div id="form">
+      <div class="field">
+      <label class="label">Name</label>
+      <div class="control">
+        <input id="customerNameField" class="input" type="text" placeholder="Text input">
+      </div>
+    </div>
+    <div class="field">
+      <label class="label">Email</label>
+      <div class="control has-icons-left has-icons-right">
+        <input class="input is-danger" type="email" placeholder="your@email.com">
+        <span class="icon is-small is-left">
+          <i class="fas fa-envelope"></i>
+        </span>
+        <span class="icon is-small is-right">
+          <i class="fas fa-exclamation-triangle"></i>
+        </span>
+      </div>
+      <p class="help is-danger">This email is invalid</p>
+    </div>
+    
+    
+    
+    <div class="field">
+      <label class="label">Message</label>
+      <div class="control">
+        <textarea class="textarea" placeholder="Comments"></textarea>
+      </div>
+    </div>
+    
+    <div class="field">
+      <div class="control">
+        <label class="checkbox">
+          <input type="checkbox">
+          I agree to the <a href="#">terms and conditions</a>
+        </label>
+      </div>
+    </div>
+    
+    <div class="field is-grouped">
+      <div class="control">
+        <button class="button is-link" onclick="completeOrder()">Submit</button>
+      </div>
+      <div class="control">
+        <button class="button is-text">Cancel</button>
+      </div>
+    </div></div>
 
 <script src='reisbureau.js'></script>
 </body>

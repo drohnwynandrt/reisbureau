@@ -76,18 +76,24 @@ function ssPlace(){
     document.getElementById("listHol").innerHTML = htmlTable;
     };
 
-// below code not working yet
-
    
     function toDes(a){
         x = allHol.find(function(b) {
             return b.place === a
         });
 
-        document.getElementById("form").innerHTML = "Would you like to go to " + x.place + " for €"+x.price+"?"
+        document.getElementById("confirmDes").innerHTML = "Would you like to go to " + x.place + " for €"+x.price+"?" + " <button onclick='confirmDes()'>Yes</button>";
     }
 
+function confirmDes(){
+    document.getElementById("form").style.display="block";
+}
 
+function completeOrder(){
+    var customerName = document.getElementById("customerNameField").value;
+    alert("Thank you "+ customerName+" for your purchase. We will contact you by e-mail!");
+    window.location = "file:///C:/Users/Drohn%20Wynand%20Tyrad/Documents/CodeGorilla/reisbureau/reisbureau.html";
+}
 
 /*
 var allHol = [["Australia", "1350"], ["Germany", "200"], ["UK", "250"], ["Italy", "400"], ["America", "1250"]];
