@@ -43,9 +43,9 @@ for (var i=0; i<allHol.length;i++){
     var next=i+1;
     if(next%colHol==0 && next!=allHol.length){
         htmlTable += "</tr><tr>";
-    
     }
 }
+
 htmlTable+= "</tr></table>";
 
 document.getElementById("listHol").innerHTML = htmlTable;
@@ -68,25 +68,24 @@ function ssPlace(){
         var next=i+1;
         if(next%colHol==0 && next!=allHol.length){
             htmlTable += "</tr><tr>";
-        
         }
     }
     htmlTable+= "</tr></table>";
     
     document.getElementById("listHol").innerHTML = htmlTable;
     };
-
    
     function toDes(a){
         x = allHol.find(function(b) {
             return b.place === a
         });
 
-        document.getElementById("confirmDes").innerHTML = "Would you like to go to " + x.place + " for €"+x.price+"?" + " <button onclick='confirmDes()'>Yes</button>";
+        document.getElementById("confirmDes").innerHTML = "Would you like to go to " + x.place + " for €"+x.price+"?" + " <button class='hideAfterConfirm'  onclick='confirmDes()'>Yes</button>";
     }
 
 function confirmDes(){
     document.getElementById("form").style.display="block";
+    document.getElementById("listHol").style.display = "none";
 }
 
 function completeOrder(){
@@ -103,9 +102,11 @@ function completeOrder(){
         alert("Thank you "+ customerName+" for your purchase. We will contact you through e-mail!");
         window.location = "file:///C:/Users/Drohn%20Wynand%20Tyrad/Documents/CodeGorilla/reisbureau/reisbureau.html";
     } 
-   
 }
 
+function cancelOrder(){
+    window.location = "file:///C:/Users/Drohn%20Wynand%20Tyrad/Documents/CodeGorilla/reisbureau/reisbureau.html";
+}
 /*
 var allHol = [["Australia", "1350"], ["Germany", "200"], ["UK", "250"], ["Italy", "400"], ["America", "1250"]];
 function showHol(){
