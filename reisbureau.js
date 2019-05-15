@@ -91,8 +91,19 @@ function confirmDes(){
 
 function completeOrder(){
     var customerName = document.getElementById("customerNameField").value;
-    alert("Thank you "+ customerName+" for your purchase. We will contact you by e-mail!");
-    window.location = "file:///C:/Users/Drohn%20Wynand%20Tyrad/Documents/CodeGorilla/reisbureau/reisbureau.html";
+    var customerEmail = document.getElementById("customerEmailField").value;
+
+    if (customerName == ""  ){
+        alert ("Please fill in your name")
+    }
+    else if (customerEmail == ""){
+        alert ("Please fill in your e-mail")
+    }
+    else  {
+        alert("Thank you "+ customerName+" for your purchase. We will contact you through e-mail!");
+        window.location = "file:///C:/Users/Drohn%20Wynand%20Tyrad/Documents/CodeGorilla/reisbureau/reisbureau.html";
+    } 
+   
 }
 
 /*
