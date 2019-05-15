@@ -36,7 +36,7 @@ var sortPrice = allHol.sort(function(a, b){
 });
 
 var colHol = 1;
-var htmlTable = "<table class='table is-fullwidth'><tr><td>Destination</td><td>Euro</td><td>Order</td></tr><tr>";
+var htmlTable = "<table class='table is-fullwidth'><tr><td><b>Destination</b></td><td><b>Euro</b></td><td><b>Order</b></td></tr><tr>";
 
 for (var i=0; i<allHol.length;i++){
     htmlTable += "<td>" + sortPrice[i].place + "</td><td>" + sortPrice[i].price +"</td><td>" + sortPrice[i].order + "</td>";
@@ -61,7 +61,7 @@ function ssPlace(){
     });
     
     var colHol = 1;
-    var htmlTable = "<table class='table is-fullwidth'><tr><td>Destination</td><td>Euro</td><td>Order</td></tr><tr>";
+    var htmlTable = "<table class='table is-fullwidth'><tr><td><b>Destination</b></td><td><b>Euro</b></td><td><b>Order</b></td></tr><tr>";
     
     for (var i=0; i<allHol.length;i++){
         htmlTable += "<td>" + sortPlace[i].place + "</td><td>" + sortPlace[i].price +"</td><td>" + sortPlace[i].order + "</td>";

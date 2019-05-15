@@ -1,8 +1,11 @@
 body{
-    width: 960px;
+    width: 800px;
     text-align:center;
     margin:auto;
     padding: auto;
+}
+.table{
+    text-align:center;
 }
 #form{
     display: none;
@@ -10,6 +13,9 @@ body{
 #buttonContainer{
     margin:auto;
     text-align: center;
+}
+#listhol{
+    text-align:center;
 }
 
 button{
