@@ -89,6 +89,7 @@ function confirmDes(){
     document.getElementById("soplb").style.display = "none";
     document.getElementById("soprb").style.display = "none";
     document.getElementById("conDesBut").style.display = "none";
+    document.getElementById("confirmDes").innerHTML = "Please fill in the following form to complete your order.";
 }
 
 function completeOrder(){
