@@ -80,12 +80,15 @@ function ssPlace(){
             return b.place === a
         });
 
-        document.getElementById("confirmDes").innerHTML = "Would you like to go to " + x.place + " for €"+x.price+"?" + " <button class='hideAfterConfirm'  onclick='confirmDes()'>Yes</button>";
+        document.getElementById("confirmDes").innerHTML = "Would you like to go to " + x.place + " for €"+x.price+"?" + " <button id='conDesBut'  onclick='confirmDes()'>Yes</button>";
     }
 
 function confirmDes(){
     document.getElementById("form").style.display="block";
     document.getElementById("listHol").style.display = "none";
+    document.getElementById("soplb").style.display = "none";
+    document.getElementById("soprb").style.display = "none";
+    document.getElementById("conDesBut").style.display = "none";
 }
 
 function completeOrder(){
