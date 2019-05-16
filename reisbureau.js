@@ -105,6 +105,7 @@ function completeOrder(){
     else  {
         alert("Thank you "+ customerName+" for your purchase. We will contact you through e-mail!");
         window.location = "file:///C:/Users/Drohn%20Wynand%20Tyrad/Documents/CodeGorilla/reisbureau/reisbureau.html";
+        window.location = "https://drohnwynandrt.github.io/reisbureau/";
     } 
 }
 
