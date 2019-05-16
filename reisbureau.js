@@ -104,12 +104,12 @@ function completeOrder(){
     }
     else  {
         alert("Thank you "+ customerName+" for your purchase. We will contact you through e-mail!");
-        document.location.reload() 
+        document.location.reload() ;
     } 
 }
 
 function cancelOrder(){
-    document.location.reload() 
+    document.location.reload() ;
     
 }
 /*
