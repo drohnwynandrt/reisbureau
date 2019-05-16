@@ -104,14 +104,13 @@ function completeOrder(){
     }
     else  {
         alert("Thank you "+ customerName+" for your purchase. We will contact you through e-mail!");
-
-        window.location = "https://drohnwynandrt.github.io/reisbureau/";
+        window.location = "file:///C:/Users/Drohn%20Wynand%20Tyrad/Documents/CodeGorilla/reisbureau/reisbureau.html";
     } 
 }
 
 function cancelOrder(){
-
-    window.location = "https://drohnwynandrt.github.io/reisbureau/";
+    window.location = "file:///C:/Users/Drohn%20Wynand%20Tyrad/Documents/CodeGorilla/reisbureau/reisbureau.html";
+    
 }
 /*
 var allHol = [["Australia", "1350"], ["Germany", "200"], ["UK", "250"], ["Italy", "400"], ["America", "1250"]];
