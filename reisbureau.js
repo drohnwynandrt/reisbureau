@@ -77,7 +77,7 @@ function ssPlace(){
    
     function toDes(a){
         x = allHol.find(function(b) {
-            return b.place === a
+            return b.place == a
         });
 
         document.getElementById("confirmDes").innerHTML = "Would you like to go to " + x.place + " for €"+x.price+"?" + " <button id='conDesBut'  onclick='confirmDes()'>Yes</button>";
