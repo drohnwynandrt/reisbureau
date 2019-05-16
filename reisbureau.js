@@ -110,7 +110,7 @@ function completeOrder(){
 
 function cancelOrder(){
     window.location = "file:///C:/Users/Drohn%20Wynand%20Tyrad/Documents/CodeGorilla/reisbureau/reisbureau.html";
-    window.location = https://drohnwynandrt.github.io/reisbureau/;
+    window.location = "https://drohnwynandrt.github.io/reisbureau/";
 }
 /*
 var allHol = [["Australia", "1350"], ["Germany", "200"], ["UK", "250"], ["Italy", "400"], ["America", "1250"]];
